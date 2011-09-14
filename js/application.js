@@ -56,7 +56,6 @@ $(document).ready(function(){
     goToByScroll($('.message'));
   }
   
-  //
   if ($("link[rel='stylesheet']").attr("href") == "/css/style.css"){
     var imageset = [],
       i=0,
@@ -108,13 +107,6 @@ $(document).ready(function(){
         new_el = previous(current, match_against);
       } else {
         new_el = next_img(current, match_against);
-      }
-      function getPosition(arrayName,arrayItem)
-      {
-        for(var i=0;i<arrayName.length;i++){ 
-         if(arrayName[i]==arrayItem)
-        return i;
-        }
       }
     }
     $('.prev, .next').click(function() {

@@ -202,6 +202,9 @@ aside p:first-of-type, .resume section p:first-of-type{
 	float: right;
 	margin-right: 16px;
 }
+.slider-controls a {
+	margin-left:20px;
+}
 /*----------------------------------------------------------------------------
 =Secondary Content
 -----------------------------------------------------------------------------*/

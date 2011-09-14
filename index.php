@@ -122,8 +122,8 @@ unset($_POST);
           <section>
             <h2>Diablo Mode</h2>
             <div class="slider-controls">
-              <a class="prev" href="#">previous</a>
-              <a class="next" href="#">next</a>
+              <a class="prev" href="#">&laquo; previous</a>
+              <a class="next" href="#">next &raquo;</a>
             </div>
             <img src="/images/diablomode.png" class="projectImage" alt="Screenshot of Diablo Mode's website.">
           </section>
@@ -146,8 +146,8 @@ unset($_POST);
           <section>
             <h2>Andrew Schroeder</h2>
             <div class="slider-controls">
-              <a class="prev" href="#">previous</a>
-              <a class="next" href="#">next</a>
+              <a class="prev" href="#">&laquo; previous</a>
+              <a class="next" href="#">next &raquo;</a>
             </div>
             <img src="/images/andrewschroeder.png" class="projectImage" alt="Andrewschroeder">
           </section>
@@ -168,8 +168,8 @@ unset($_POST);
           <section>
             <h2>Twenty/20 Audio</h2>
             <div class="slider-controls">
-              <a class="prev" href="#">previous</a>
-              <a class="next" href="#">next</a>
+              <a class="prev" href="#">&laquo; previous</a>
+              <a class="next" href="#">next &raquo;</a>
             </div>
             <img src="/images/twenty20.png" class="projectImage" alt="Twenty20">
           </section>
@@ -191,8 +191,8 @@ unset($_POST);
           <section>
             <h2>Slurp! 2010</h2>
             <div class="slider-controls">
-              <a class="prev" href="#">previous</a>
-              <a class="next" href="#">next</a>
+              <a class="prev" href="#">&laquo; previous</a>
+              <a class="next" href="#">next &raquo;</a>
             </div>
             <img src="/images/slurp.jpg" class="projectImage" alt="Slurp">
           </section>
@@ -214,8 +214,8 @@ unset($_POST);
           <section>
             <h2>Learning WCO</h2>
             <div class="slider-controls">
-              <a class="prev" href="#">previous</a>
-              <a class="next" href="#">next</a>
+              <a class="prev" href="#">&laquo; previous</a>
+              <a class="next" href="#">next &raquo;</a>
             </div>
             <img src="/images/wco.png" class="projectImage" alt="Learning WCO">
           </section>
@@ -242,6 +242,7 @@ unset($_POST);
           <ul>
             <li><a href="http://www.twitter.com/#!/alexcarrollmn">@alexcarrollmn</a></li>
             <li><a href="http://www.linkedin.com/pub/alex-carroll/8/4ba/588">LinkedIn</a></li>
+            <li><a href="https://github.com/alexcarrollmn">Github</a></li>
           </ul>
         </section>
         <section id="resume">
