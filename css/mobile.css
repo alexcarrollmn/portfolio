@@ -1,0 +1,190 @@
+@import url('reset.css');
+/*-----------------------------------------------------------------------------
+Alex Carroll's Portfolio Mobile Stylesheet
+
+version:   1.0
+author:    Alex Carroll
+email:     hi@alexcarrollmn.com
+website:   http://www.alexcarrollmn.com
+-----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------
+=General
+-----------------------------------------------------------------------------*/
+
+/* Remove border around linked images */
+a img {
+	border: 0;
+}
+body {
+  font: 14px "Questrial", "Helvetica", "Lucida Sans", "Trebuchet MS", Tahoma, Verdana, sans-serif;
+	line-height:23px;
+	max-width:1140px;
+	margin:0 auto;
+	margin-bottom:40px;
+	padding:0 5px;
+}
+p {
+	margin-bottom:33px;
+}
+strong {
+	font-weight:bold;
+}
+
+/*----------------------------------------------------------------------------
+=Headings
+-----------------------------------------------------------------------------*/
+header h1 span{
+	text-indent:-9999px;
+	display:block;
+	height:0;
+}
+header h1 img {
+	max-width:100%;
+	margin-bottom:-7px;
+}
+aside h3 {
+	font-family: 'Arvo', serif;
+	font-size:17px;
+	margin-bottom: 15px;
+	margin-top: 28px;
+}
+section h2 {
+	font-family: 'Arvo', serif;
+	font-size:22px;
+	margin-bottom:10px;
+}
+
+/*----------------------------------------------------------------------------
+=Links
+-----------------------------------------------------------------------------*/
+.liveLink {
+	color:#F16522;
+}
+a:hover {
+	color:#F16522;
+}
+
+/*----------------------------------------------------------------------------
+ =Main Nav
+-----------------------------------------------------------------------------*/
+#nav {
+	border-top:6px solid #F16522;
+	width:100%;
+	background:#fff;
+	overflow:hidden;
+	padding-bottom:5px;
+	max-width:1140px;
+}
+#mainNav {
+	font-weight:bold;
+	font-size:17px;
+	margin-top:18px;
+	overflow:hidden;
+}
+#mainNav li {
+	float:left;
+	margin-right:15px;
+}
+
+
+/*----------------------------------------------------------------------------
+=Sub Nav
+-----------------------------------------------------------------------------*/
+#projectNav li {
+	float:left;
+	padding-right:5px;
+	margin-top:10px;
+}
+#projectNav li:first-of-type{
+	border-left:none;
+	padding-left:0;
+}
+
+
+/*----------------------------------------------------------------------------
+=Main Content
+-----------------------------------------------------------------------------*/
+article{
+	margin-bottom:115px;
+}
+#content {
+	margin-top:15px;
+}
+#content article {
+	overflow:hidden;
+}
+#content section {
+	float:left;
+	margin-right:10px;
+	width:760px;
+	max-width:99%;
+}
+
+aside {
+	float:left;
+	width:300px;
+}
+aside p:first-of-type{
+	margin-top:10px;
+}
+.projectImage {
+	border:1px solid #929497;
+	max-width:100%;
+}
+.code-images {
+	display:none;
+}
+/*----------------------------------------------------------------------------
+=Footer
+-----------------------------------------------------------------------------*/
+footer {
+	clear:both;
+	border-top:3px solid #F16522;
+	padding-top:34px;
+	overflow:hidden;
+}
+footer section {
+	margin-bottom:20px;
+	width:300px;
+}
+#contact h2 a {
+	font-size:0.8em;
+}
+
+/*----------------------------------------------------------------------------
+=Forms
+-----------------------------------------------------------------------------*/
+form{
+	overflow:hidden;
+}
+label {
+	display:block;
+}
+input, textarea {
+	display:block;
+	width:287px;
+	border:1px solid #F16522;
+	padding:5px;
+	background:#fff;
+}
+textarea {
+	resize:none;
+	font: 14px "Questrial", "Helvetica", "Lucida Sans", "Trebuchet MS", Tahoma, Verdana, sans-serif;
+	height:150px;
+}
+input[type="submit"] {
+	float:right;
+	width:140px;
+	margin-top:25px;
+}
+p.message {
+	margin-top: 22px;
+	width: 200px;
+}
+.success {
+	color:#00c520;
+}
+.error {
+	color:#c53300;
+}

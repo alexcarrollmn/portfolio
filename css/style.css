@@ -1,0 +1,276 @@
+@import url('reset.css');
+/*-----------------------------------------------------------------------------
+Alex Carroll's Portfolio Stylesheet
+
+version:   1.0
+author:    Alex Carroll
+email:     hi@alexcarrollmn.com
+website:   http://www.alexcarrollmn.com
+-----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------
+=General
+-----------------------------------------------------------------------------*/
+
+/* Remove border around linked images */
+a img {
+	border: 0;
+}
+body {
+  font: 14px "Questrial", "Helvetica", "Lucida Sans", "Trebuchet MS", Tahoma, Verdana, sans-serif;
+	line-height:23px;
+	max-width:1140px;
+	margin:0 auto;
+	margin-bottom:40px;
+}
+p {
+	margin-bottom:33px;
+}
+strong {
+	font-weight:bold;
+}
+
+/*----------------------------------------------------------------------------
+=Headings
+-----------------------------------------------------------------------------*/
+header h1 span{
+	text-indent:-9999px;
+	display:block;
+	height:0;
+}
+header h1 img {
+	max-width:100%;
+	margin-bottom:-8px;
+}
+.resume h1 {
+	font-family: 'Arvo', serif;
+	font-size:22px;
+	margin-bottom:10px;
+	padding-bottom:5px;
+	border-bottom:2px solid #F16522;
+}
+aside h3 {
+	font-family: 'Arvo', serif;
+	font-size:17px;
+	margin-bottom: 15px;
+	margin-top: 28px;
+}
+section h2 {
+	font-family: 'Arvo', serif;
+	font-size:22px;
+	margin-bottom:10px;
+}
+.resume  h3 {
+	font-family: 'Arvo', serif;
+	font-size:13px;
+	margin-top:2px;
+}
+
+.resume  h2 {
+	font-family: 'Arvo', serif;
+	font-size:15px;
+}
+.resume h1 {
+	font-family: 'Arvo', serif;
+	font-size:22px;
+	margin-bottom:10px;
+	padding-bottom:5px;
+	border-bottom:2px solid #F16522;
+}
+/*----------------------------------------------------------------------------
+=Links
+-----------------------------------------------------------------------------*/
+.liveLink {
+	color:#F16522;
+}
+a:hover {
+	color:#F16522;
+}
+
+/*----------------------------------------------------------------------------
+ =Main Nav
+-----------------------------------------------------------------------------*/
+#nav {
+	border-top:6px solid #F16522;
+	max-width:1140px;
+	width:100%;
+	overflow:hidden;
+	padding-bottom:5px;
+}
+#mainNav-wrapper {
+	overflow:hidden;
+}
+#mainNav {
+	float:right;
+	font-weight:bold;
+	font-size:17px;
+	margin-top:18px;
+	margin-right:62px;
+	overflow:hidden;
+}
+#mainNav li {
+	float:left;
+	margin-right:33px;
+}
+
+
+/*----------------------------------------------------------------------------
+=Sub Nav
+-----------------------------------------------------------------------------*/
+#projectNav li {
+	float:left;
+	padding:5px;
+	border-left:2px solid #58595B;
+	margin-top:10px;
+	overflow:hidden;
+}
+#projectNav li:first-of-type{
+	border-left:none;
+	padding-left:0;
+}
+
+
+/*----------------------------------------------------------------------------
+=Main Content
+-----------------------------------------------------------------------------*/
+article{
+	margin-bottom:115px;
+}
+#content {
+	margin-top:87px;
+}
+#content article {
+	overflow:hidden;
+}
+#content section {
+	float:left;
+	margin-right:29px;
+	width:760px;
+	max-width:100%;
+}
+
+aside {
+	float:left;
+	width:351px;
+}
+aside p:first-of-type, .resume section p:first-of-type{
+	margin-top:10px;
+}
+#content aside img {
+	width:100%;
+}
+.projectImage {
+	border:1px solid #929497;
+	max-width:100%;
+	width:744px;
+}
+.four-oh-four #content {
+	height:787px;
+	background: url('../images/four-oh-four-background.png') no-repeat 0 0;
+	margin-top:-46px;
+}
+.oops {
+	margin-left: 69.3%;
+	padding-top: 273px;
+	width:300px;
+}
+.oops h1 {
+	font-weight:bold;
+	font-size:36px;
+	margin-bottom:12px;
+}
+.oops p {
+	font-size:18px;
+}
+.oops a {
+	color:#F16522;
+}
+
+.resume p {
+	margin:0;
+	max-width:380px;
+}
+.resume article div {
+	overflow:hidden;
+	margin-bottom:33px;
+}
+.resume article {
+	margin-bottom:20px;
+}
+.slider-controls {
+	display:none;
+	float: right;
+	margin-right: 16px;
+}
+/*----------------------------------------------------------------------------
+=Secondary Content
+-----------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------------
+=Footer
+-----------------------------------------------------------------------------*/
+footer {
+	clear:both;
+	border-top:3px solid #F16522;
+	padding-top:34px;
+	overflow:hidden;
+}
+footer section {
+	float:left;
+	margin-right:40px;
+}
+#about {
+	width:450px;
+}
+#resume {
+	width:250px;
+}
+#contact {
+	width:350px;
+	margin-right:0;
+}
+#contact h2 a {
+	font-size:0.8em;
+}
+
+/*----------------------------------------------------------------------------
+=Forms
+-----------------------------------------------------------------------------*/
+form{
+	overflow:hidden;
+}
+label {
+	display:block;
+}
+input, textarea {
+	display:block;
+	width:338px;
+	border:1px solid #F16522;
+	padding:5px;
+	background:#fff;
+}
+input[type="text"]{
+	font: 14px "Questrial", "Helvetica", "Lucida Sans", "Trebuchet MS", Tahoma, Verdana, sans-serif;
+}
+textarea {
+	resize:none;
+	font: 14px "Questrial", "Helvetica", "Lucida Sans", "Trebuchet MS", Tahoma, Verdana, sans-serif;
+	height:150px;
+}
+input[type="submit"] {
+	float:right;
+	width:140px;
+	margin-top:25px;
+}
+p.message {
+	margin-top: 22px;
+	width: 200px;
+}
+.success {
+	color:#00c520;
+}
+.error {
+	color:#c53300;
+}
