@@ -9,17 +9,9 @@
     <meta name="Description" content="The portfolio of Alex Carroll" />
     <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Arvo|Questrial' rel='stylesheet' type='text/css' />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/js/application.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
     <link href="favicon.ico" rel="icon" type="image/x-icon" title="" />
-    <script src="/js/modernizr.custom.23064.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/js/selectivizr-min.js" type="text/javascript" charset="utf-8"></script>
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="http://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.4-min.js"></script>
-    <script src="selectivizr-min.js" type="text/javascript" charset="utf-8"></script>
-    <![endif]-->
   </head>
   <body>
     <div id="wrapper">
@@ -181,6 +173,7 @@
         </section>
       </footer>
     </div>
+    <script src="/js/application.js" type="text/javascript" charset="utf-8"></script>
     <script src="//static.getclicky.com/js" type="text/javascript"></script>
     <script type="text/javascript">try{ clicky.init(66473090); }catch(e){}</script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66473090ns.gif" /></p></noscript>
