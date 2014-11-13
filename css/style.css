@@ -2,7 +2,7 @@
 /*-----------------------------------------------------------------------------
 Alex Carroll's Portfolio Stylesheet
 
-version:   1.0
+version:   2.0
 author:    Alex Carroll
 email:     hi@alexcarrollmn.com
 website:   http://www.alexcarrollmn.com
@@ -11,8 +11,6 @@ website:   http://www.alexcarrollmn.com
 /*----------------------------------------------------------------------------
 =General
 -----------------------------------------------------------------------------*/
-
-/* Remove border around linked images */
 a img {
 	border: 0;
 }
@@ -236,44 +234,4 @@ footer section {
 }
 #contact h2 a {
 	font-size:0.8em;
-}
-
-/*----------------------------------------------------------------------------
-=Forms
------------------------------------------------------------------------------*/
-form{
-	overflow:hidden;
-}
-label {
-	display:block;
-}
-input, textarea {
-	display:block;
-	width:338px;
-	border:1px solid #F16522;
-	padding:5px;
-	background:#fff;
-}
-input[type="text"]{
-	font: 14px "Questrial", "Helvetica", "Lucida Sans", "Trebuchet MS", Tahoma, Verdana, sans-serif;
-}
-textarea {
-	resize:none;
-	font: 14px "Questrial", "Helvetica", "Lucida Sans", "Trebuchet MS", Tahoma, Verdana, sans-serif;
-	height:150px;
-}
-input[type="submit"] {
-	float:right;
-	width:140px;
-	margin-top:25px;
-}
-p.message {
-	margin-top: 22px;
-	width: 200px;
-}
-.success {
-	color:#00c520;
-}
-.error {
-	color:#c53300;
 }
