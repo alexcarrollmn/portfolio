@@ -1,64 +1,3 @@
-<?
-if(isset($_POST['submit'])){
-
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
-  $url = $_POST['url'];
-  substr_replace($url ,"",-1);
-  $host  = $_SERVER['HTTP_HOST'];
-  $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-
-  function check_email_address($email) {
-    if (!ereg("^[^@]{1,64}@[^@]{1,255}$", $email)) { 
-      return false; 
-    }
-    $email_array = explode("@", $email); 
-    $local_array = explode(".", $email_array[0]); 
-    for ($i = 0; $i < sizeof($local_array); $i++) { 
-      if (!ereg("^(([A-Za-z0-9!#$%&'*+/=?^_`{|}~-][A-Za-z0-9!#$%&'*+/=?^_`{|}~\.-]{0,63})|(\"[^(\\|\")]{0,62}\"))$", 
-      $local_array[$i])) { 
-        return false; 
-      } 
-    } 
-    if (!ereg("^\[?[0-9\.]+\]?$", $email_array[1])) {  
-      $domain_array = explode(".", $email_array[1]); 
-      if (sizeof($domain_array) < 2) { 
-        return false; 
-      } 
-      for ($i = 0; $i < sizeof($domain_array); $i++) { 
-        if (!ereg("^(([A-Za-z0-9][A-Za-z0-9-]{0,61}[A-Za-z0-9])|([A-Za-z0-9]+))$", $domain_array[$i])) { 
-          return false; 
-        } 
-      } 
-    } 
-    return true; 
-  }
-
-  if (check_email_address($email)) {
-    $complete_message = "";
-    $complete_message .= "Name: " . $name . "\n";
-    $complete_message .= "E-mail: " . $email . "\n";
-    $complete_message .= "Message: " . $message . "\n";
-
-    $send_to_user = "Thank you for contacting me. I will respond as soon as possible. \r\n http://www.alexcarrollmn.com \r\n\r\nYour submission:\r\n" . $complete_message;
-
-    $send_to_me = "A visitor has submitted a contact form request. Below is a copy of what they have submitted.\r\n\r\n" . $complete_message;
-
-    mail("hi@alexcarrollmn.com", "Portfolio | Website Contact Request", $send_to_me, "From:" . $email);
-    mail($email, "Thank you for contacting Alex Carroll", $send_to_user, "From: hi@alexcarrollmn.com");
-
-    $success = true;
-    $error = false;
-  }
-  else{
-    $error = true;
-    $success = false;
-    unset($success);
-  }
-}
-unset($_POST);
-?>
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
 <head>
@@ -76,8 +15,8 @@ unset($_POST);
   <script src="../js/modernizr.custom.23064.js" type="text/javascript" charset="utf-8"></script>
   <script src="../js/selectivizr-min.js" type="text/javascript" charset="utf-8"></script>
 
-  <meta name="viewport" content="width=device-width; initial-scale=1.0"> 
-  
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
   <!--[if lt IE 9]>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <script src="http://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.4-min.js"></script>
@@ -191,7 +130,7 @@ unset($_POST);
           </aside>
           <section class="description">
             <h3>Bachelor of Science in Human-Computer Interaction</h3>
-            <p>Coursework completed for transfer</p> 
+            <p>Coursework completed for transfer</p>
           </section>
         </div>
       </article>
@@ -222,36 +161,7 @@ unset($_POST);
           <li><a href="../resume">html</a></li>
         </ul>
       </section>
-      <section id="contact">
-        <h2>Contact &ndash; <a href="../vCard.vcf">get vCard!</a></h2>
-        <?php
-      function curPageURL() {
-        $pageURL = 'http';
-        if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
-        $pageURL .= "://";
-        if ($_SERVER["SERVER_PORT"] != "80") {
-          $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
-        } else {
-          $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
-        }
-        return $pageURL;
-      }
-      ?>
-      <form method="post" action="<?=curPageURL();?>">
-        <label for="name">Name:</label><input type="text" name="name" id="name" value="<?= @$name;?>" />
-        <label for="email">Email:</label><input type="text" name="email" id="email" value="<?= @$email;?>" />
-        <label for="message">Message:</label><textarea name="message" id="message"><?= @$message;?></textarea>
-        <input type="hidden" value="<?=curPageURL();?>" name="url">
-        <input type="submit" value="contact me" name="submit" id="submit"/>
-        <? if ($error){echo '            <p class="message error">Please provide a valid E-mail address.</p>';}?>
-        <? if ($success){echo '            <p class="message success">Thank you for contacting Alex Carroll. A copy of your message was delivered to the E-mail address provided.</p>';}?>
-      </form>
-      <?
-    unset($error);
-    unset($success);
-    ?>
-  </section>
-</footer>  
+    </footer>
 </div>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
