@@ -1,3 +1,6 @@
+<?
+    header('x-hi: For Hire: Web Developer, Super Cool.');
+?>
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
   <head>
@@ -8,7 +11,7 @@
     <meta name="Keywords" content="Alex Carroll, Developer, Web Developer, Web Designer, Web Design, Minneapolis, St. Paul, Saint Paul, PHP, WordPress, Ruby on Rails, alexcarrollmn" />
     <meta name="Description" content="The portfolio of Alex Carroll" />
     <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
-    <link href='http://fonts.googleapis.com/css?family=Arvo|Questrial' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Arvo|Questrial' rel='stylesheet' type='text/css' />
     <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
     <link href="favicon.ico" rel="icon" type="image/x-icon" title="" />
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
@@ -20,18 +23,14 @@
       </header>
       <nav id="nav">
         <div id="mainNav-wrapper">
-          <ul id="mainNav">
+          <ul id="mainNav" role="navigation">
             <li><a href="#content">Portfolio</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <ul id="projectNav">
           <li><a href="#diablomode" class="dmLink">Diablo Mode</a></li>
           <li><a href="#andrewschroeder" class="asLink">Andrew Schroeder</a></li>
-          <li><a href="#twenty20" class="twentyLink">Twenty/20 Audio</a></li>
-          <li><a href="#slurp" class="slurpLink">Slurp! 2010</a></li>
-          <li><a href="#learningwco" class="wcoLink">Learning WCO</a></li>
         </ul>
       </nav>
       <div id="pushDiv"></div>
@@ -82,6 +81,7 @@
             </div>
           </aside>
         </article>
+        <!--
         <article id="twenty20" class="project">
           <section>
             <h2>Twenty/20 Audio</h2>
@@ -105,6 +105,7 @@
             </div>
           </aside>
         </article>
+
         <article id="slurp" class="project">
           <section>
             <h2>Slurp! 2010</h2>
@@ -128,6 +129,7 @@
             </div>
           </aside>
         </article>
+
         <article id="learningwco" class="project">
           <section>
             <h2>Learning WCO</h2>
@@ -152,6 +154,7 @@
             </div>
           </aside>
         </article>
+        -->
       </div>
       <footer>
         <section id="about">
@@ -174,9 +177,6 @@
       </footer>
     </div>
     <script src="/js/application.js" type="text/javascript" charset="utf-8"></script>
-    <script src="//static.getclicky.com/js" type="text/javascript"></script>
-    <script type="text/javascript">try{ clicky.init(66473090); }catch(e){}</script>
-    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66473090ns.gif" /></p></noscript>
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
