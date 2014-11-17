@@ -164,6 +164,7 @@ header('x-hi: For Hire: Web Developer, Super Cool.');
             <section id="about">
                 <h2>About Alex Carroll</h2>
                 <p>Understanding how people interact with electronic interfaces is a passion of mine; from the most mundane to the highly interactive, they all interest me. As a web developer, I draw inspiration from code that is treated equally important as design.</p>
+                <p>alexcarroll.mn@gmail.com | +1 (651) 428-5298</p>
                 <!--
                 <ul>
                 <li><a href="http://www.twitter.com/#!/alexcarrollmn">@alexcarrollmn</a></li>
@@ -171,14 +172,6 @@ header('x-hi: For Hire: Web Developer, Super Cool.');
                 <li><a href="https://github.com/alexcarrollmn">Github</a></li>
             </ul>
         -->
-    </section>
-    <section id="resume">
-        <h2>Resume</h2>
-        <ul>
-            <li><a href="/AlexCarroll_Resume.pdf">pdf</a></li>
-            <li><a href="/AlexCarroll_Resume.doc">doc</a></li>
-            <li><a href="/resume">html</a></li>
-        </ul>
     </section>
 </footer>
 </div>
