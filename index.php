@@ -51,7 +51,7 @@ header('x-hi: For Hire: Web Developer, Super Cool.');
                     <h3>Details</h3>
                     <strong>Contributions:</strong> backbone.js, node.js, sass, underscore.js, content concepting, sprint planning, team processes
                     <p>
-                        A simple thought of &rdquo;How should retail be done online?&ldquo; has evolved into a full blown application and product team that is not only redefining content, but also how Target&rsquo;s web presence in the future.
+                        A simple thought of &rdquo;How should retail be done online?&ldquo; has evolved into a full blown application and product team that is not only redefining content, but also Target&rsquo;s web presence in the future.
                     </p>
                     <a href="http://explore.target.com" class="liveLink" target="_blank">view live</a>
 
