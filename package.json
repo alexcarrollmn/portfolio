@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Alex Carroll",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexcarrollmn/portfolio.git"
+  },
+  "author": "Alex Carroll",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexcarrollmn/portfolio/issues"
+  },
+  "homepage": "https://github.com/alexcarrollmn/portfolio#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "html": "^1.0.0"
+  }
+}
