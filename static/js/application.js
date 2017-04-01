@@ -32,10 +32,12 @@ $(document).ready(function(){
       $('html,body').animate({scrollTop: $(id).offset().top - 97},'slow');
     }
     $("#nav a").click(function(event){
-      event.preventDefault();
-      var href = $(event.target).attr('href');
-      goToByScroll(href);
-    });
+         if($(this).attr('target')!="_blank"){
+            event.preventDefault();
+            var href = $(event.target).attr('href');
+            goToByScroll(href);
+          }
+      });
   }
   if($('.message').length != 0){
     goToByScroll($('.message'));
