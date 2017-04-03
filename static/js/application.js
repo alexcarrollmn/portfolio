@@ -17,16 +17,6 @@ $(document).ready(function(){
           });
           $("#pushDiv").css("height","0");
       }
-      /*if ( $(window).scrollTop() + $("#nav").height() + 115 > $('#diablomode').offset().top && $(window).scrollTop() + $("#nav").height() + 115 < ($('#diablomode').offset().top + $('#diablomode').height()) ){
-        $(".dmLink").css("color","#F16522");
-      }else {
-        $(".dmLink").css("color","#000000");
-      }
-      if ( $(window).scrollTop() + $("#nav").height() + 115 > $('#andrewschroeder').offset().top && $(window).scrollTop() + $("#nav").height() + 115 < ($('#andrewschroeder').offset().top + $('#andrewschroeder').height()) ){
-        $(".asLink").css("color","#F16522");
-      }else {
-        $(".asLink").css("color","#000000");
-    }*/
     });
     function goToByScroll(id){
       $('html,body').animate({scrollTop: $(id).offset().top - 97},'slow');
@@ -43,7 +33,7 @@ $(document).ready(function(){
     goToByScroll($('.message'));
   }
 
-  if ($("link[rel='stylesheet']").attr("href") == "/css/style.css"){
+ 
     var imageset = [],
       i=0,
       images;
@@ -101,7 +91,6 @@ $(document).ready(function(){
       $(this).parent().parent().find('.projectImage').attr('src', new_el);
       return false;
     })
-  }
 
 
 });

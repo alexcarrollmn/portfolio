@@ -1,0 +1,7 @@
+applications:
+- host: carroll-portfolio
+  name: carroll-portfolio
+  domain: mybluemix.net
+  instances: 1
+  memory: 1G
+  disk_quota: 2G
